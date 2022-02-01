@@ -16,3 +16,28 @@ body {
     color: #002980;
     background-color: #ffffbf;
 }
+
+/*set the root colors for the Quiz container*/
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 10;
+    --hue-correct: 150;
+  }
+
+  /*style the cover text that appears as an overlay on all hero images across the site*/
+#quiz-text {
+    color: #002980;
+    font-size: 100%;
+    font-family: Merriweather, Oswald;
+    letter-spacing: 2px;  
+    width: 750px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 20px;
+    left: 0;
+    position: absolute;
+    background-color: rgba(23, 67, 88, 0.1);
+    -webkit-box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  }
