@@ -12,7 +12,7 @@ const refreshBtn = document.getElementById("refresh-btn");
 // declare the scoped variables 
 
 let shuffledQuestions, currentQuestionIndex;
-let score = 0; // keep track of user's answers
+let score = 0; // Variable to keep track of user's answers
 
 // Set Questions for Quiz - 10 questions set 
 const questionBank = [
