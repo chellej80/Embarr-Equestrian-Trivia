@@ -95,108 +95,101 @@ const questionBank = [
         ],
     },
     {
-        question: "What is the name of Niamh's Mythical Horse that carries her to the land of eternal youth?",
+        question: "What does EAL stand for?",
         answers: [
             {
-                text: "Apollo",
+                text: "Equine Action Learning",
                 correct: false,
             },
             {
-                text: "Embarr",
+                text: "Equine Assisted Learning",
                 correct: true,
             },
             {
-                text: "Bucko",
+                text: "Event Action Learning",
                 correct: false,
             },
             {
-                text: "Fionn",
+                text: "Equine All Levels",
                 correct: false,
             },
         ],
     },
     {
-        question: "What is the name of Niamh's Mythical Horse that carries her to the land of eternal youth?",
+        question: "Your horse has just had his dinner, which of these must you NOT do now ?",
         answers: [
             {
-                text: "Apollo",
+                text: "Put him in the field",
                 correct: false,
             },
             {
-                text: "Embarr",
+                text: "Ride him",
                 correct: true,
             },
             {
-                text: "Bucko",
+                text: "Groom him",
                 correct: false,
             },
             {
-                text: "Fionn",
+                text: "Muck out his stable",
                 correct: false,
             },
         ],
     },
     {
-        question: "What is the name of Niamh's Mythical Horse that carries her to the land of eternal youth?",
+        question: "A young female horse under the age of three or four is referred to as?",
         answers: [
             {
-                text: "Apollo",
+                text: "Mare",
                 correct: false,
             },
             {
-                text: "Embarr",
+                text: "Stallion",
+                correct: false,
+            },
+            {
+                text: "Filly",
                 correct: true,
             },
             {
-                text: "Bucko",
-                correct: false,
-            },
-            {
-                text: "Fionn",
+                text: "Colt",
                 correct: false,
             },
         ],
     },
     {
-        question: "What is the name of Niamh's Mythical Horse that carries her to the land of eternal youth?",
+        question: "Which of these should your horse be fed the most of?",
         answers: [
             {
-                text: "Apollo",
-                correct: false,
-            },
-            {
-                text: "Embarr",
+                text: "Hay",
                 correct: true,
             },
             {
-                text: "Bucko",
+                text: "Sugar Beet",
+                correct: true,
+            },
+            {
+                text: "Carrots",
                 correct: false,
             },
             {
-                text: "Fionn",
+                text: "Oats",
                 correct: false,
             },
         ],
     },
     {
-        question: "What is the name of Niamh's Mythical Horse that carries her to the land of eternal youth?",
+        question: "Ragwort is safe for horses to eat?",
         answers: [
             {
-                text: "Apollo",
+                text: "Yes",
                 correct: false,
             },
             {
-                text: "Embarr",
+                text: "No",
                 correct: true,
             },
-            {
-                text: "Bucko",
-                correct: false,
-            },
-            {
-                text: "Fionn",
-                correct: false,
-            },
+            
         ],
     },
     {
