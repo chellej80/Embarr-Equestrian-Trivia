@@ -12,41 +12,42 @@
 
 <body>
     <header></header>
-    <section>
-        <div id="quiz-text">
-            <h2>About</h2>
-                           
-                There are two quiz options for you to try, the first is focused on General Knowledge 
-                and the second is focused on Horse Care. Both are multiple choice and you can play either quiz as much and as
-                many times as you like. Every month the quiz challenges are updated in order to keep it fresh. We hope you enjoy 
-                and of course maybe learn sometime new !!</h5>
-        </div>          
-    </section>
-
-    <section>
-
-        <div id="Quiz-container">
-                <div id="question-container" class="hide">
+    <section id="Quiz-container">
+        <!--<div id ="quiz-text">-->
+          <h2>About</h2>
+          <br>
+          <h5>
+              
+              There are two quiz options for you to try, the first is focused on General Knowledge 
+              and the second is focused on Horse Care. Both are multiple choice and you can play either quiz as much and as
+              many times as you like. Every month the quiz challenges are updated in order to keep it fresh. We hope you enjoy 
+              and of course maybe learn sometime new !!</h5><br>
+              
+         
+        <div id="question-container" class="hide">
+          
+          <div id="question">Question</div>
+          <div id="answer-buttons" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+          </div>
+          </div>
         
-                <div id="question">Question</div>
-                <div id="answer-buttons" class="btn-grid">
-                  <button class="btn">Answer 1</button>
-                  <button class="btn">Answer 2</button>
-                  <button class="btn">Answer 3</button>
-                  <button class="btn">Answer 4</button>
-                </div>
-                </div>
-                    <div class="controls">
-                    <button id="start-btn" class="start-btn btn">Play the Quiz</button>
-                    <button id="next-btn" class="next-btn btn hide">Next</button>
-                    <button id="refresh-btn" class=" refresh-btn btn hide">Restart the Quiz</button>
-                    <button id="home-btn" class=" home-btn btn hide">Go Home</button>
-                    
-                    </div>
-                    <br>
-                    <div id="results"></div>
+        <div class="controls">
+          <button id="start-btn" class="start-btn btn">Play the Quiz</button>
+          <button id="next-btn" class="next-btn btn hide">Next</button>
+          <button id="refresh-btn" class=" refresh-btn btn hide">Restart the Quiz</button>
+          <button id="home-btn" class=" home-btn btn hide">Go Home</button>
+          
+          </div>
+          <br>
+          <div id="results"></div>
         </div>
-    </section>
+          
+        </div>
+  </section>
 
     <!-- Import font awesome script-->
     <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>    
