@@ -221,6 +221,8 @@ const questionBank = [
 	currentQuestionIndex++;
 	setNextQuestion();
 });
+
+refreshBtn.addEventListener('click', refreshPage);
   
   // Start quiz - click on play quiz button to exe this function
   function startQuiz() {
@@ -253,8 +255,8 @@ const questionBank = [
   function resetStatus() {
 	
 	nextBtn.classList.add('hide');
-	while (answerBtnEle.firstChild) {
-		answerBtnEle.removeChild(answerBtnEle.firstChild);
+	while (answerBtnContainer.firstChild) {
+		answerBtnContainer.removeChild(answerBtnContainer.firstChild);
 	}
 }
 
@@ -265,5 +267,36 @@ const questionBank = [
     displayQuestion();
   }
 
+  // function
 
+    function selectAnswer(event) {
+    const selectedButton = event.target;
+    const correct = selectedButton.dataset.correct;
+       
+    if (correct) {
+      score++; // if answer is correct increment the result by 1
+    }
+    Array.from(answerBtnContainer.children).forEach(button => {
+      resetStatus(button, button.dataset.correct);
+    });
+    results.innerHTML = `${score} questions correct out of ${shuffledQuestions.length}`;
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+      nextBtn.classList.remove('hide');
+      
+    
+    } else {
   
+      endQuiz();
+      
+      }
+    }
+  
+    function endQuiz(){
+        questionContainer.classList.remove('hide');
+        refreshBtn.innerText = 'Restart';
+        refreshBtn.classList.remove('hide');
+        homeBtn.innerText = 'Go Home';
+        homeBtn.classList.remove('hide');
+        questionContainer.innerHTML = `Quiz completed`;
+        
+    }
