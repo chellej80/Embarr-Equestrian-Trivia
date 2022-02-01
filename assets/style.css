@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+/*set font poperties for all pages*/
+body {
+    font-family: Merriweather, Oswald;
+    font-weight: 300;
+    color: #002980;
+    background-color: #ffffbf;
+}
