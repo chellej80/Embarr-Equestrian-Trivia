@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather:wght@300&family=Oswald:wght@300&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +31,7 @@ body {
   
 
   #Quiz-container {
+    
     display: block;
     align-items:center;
     font-size: 100%;
