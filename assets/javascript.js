@@ -290,6 +290,10 @@ refreshBtn.addEventListener('click', refreshPage);
       
       }
     }
+
+    function refreshPage() {
+        window.location.reload();
+    }
   
     function endQuiz(){
         questionContainer.classList.remove('hide');
