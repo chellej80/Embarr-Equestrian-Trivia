@@ -17,6 +17,7 @@ body {
     font-weight: 300;
     color: #002980;
     background-color: #ffffbf;
+    
     /*background-image: url("assets/images/hero_image_horse_field.webp") no-repeat center center;*/
    
 }
@@ -38,7 +39,7 @@ body {
     font-family: Merriweather, Oswald;
     letter-spacing: 2px;  
     max-width: 750px;
-    min-height: 500px;
+    height: auto;
     margin: 50px auto;
     /*margin-left: 50px;*/
     padding: 20px;
