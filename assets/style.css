@@ -14,8 +14,8 @@ body {
     font-family: Merriweather, Oswald;
     font-weight: 300;
     color: #002980;
-    background-color: #ffffbf;
-    /*background: url("../images/hero_image_horse_field.webp") no-repeat center center;*/
+    /*background-color: #ffffbf;*/
+    background-image: url("assets/images/hero_image_horse_field.webp") no-repeat center center;
    
 }
 
