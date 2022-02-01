@@ -193,25 +193,36 @@ const questionBank = [
         ],
     },
     {
-        question: "What is the name of Niamh's Mythical Horse that carries her to the land of eternal youth?",
+        question: "Azoturia is also known as 'Monday Morning Disease' and what other name?",
         answers: [
             {
-                text: "Apollo",
+                text: "Winding down",
                 correct: false,
             },
             {
-                text: "Embarr",
+                text: "Tiring out",
+                correct: false,
+            },
+            {
+                text: "Tying down",
+                correct: false,
+            },
+            {
+                text: "Tying up",
                 correct: true,
-            },
-            {
-                text: "Bucko",
-                correct: false,
-            },
-            {
-                text: "Fionn",
-                correct: false,
             },
         ],
     },
   ];
+
+  // Create the Quiz Functions & event listners 
+
+  
+  // Start quiz - click on play quiz button to exe this function
+  function startQuiz() {
+    score = 0;
+    currentQuestionIndex = 0;
+    shuffledQuestions = questionBank.sort(() => Math.random() - 0.5);
+    setNextQuestion();
+  }
   
