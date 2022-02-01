@@ -217,6 +217,10 @@ const questionBank = [
 
   // Create the Quiz Functions & event listners 
   startBtn.addEventListener("click", startQuiz);
+  nextBtn.addEventListener('click', () => {
+	currentQuestionIndex++;
+	setNextQuestion();
+});
   
   // Start quiz - click on play quiz button to exe this function
   function startQuiz() {
@@ -245,10 +249,21 @@ const questionBank = [
     });
   }
 
-  // Function to display the next Question
+  // function to reset the answer selections when user clicks the next button
+  function resetStatus() {
+	
+	nextBtn.classList.add('hide');
+	while (answerBtnEle.firstChild) {
+		answerBtnEle.removeChild(answerBtnEle.firstChild);
+	}
+}
+
+  // Function to reset the answer variable & display the next Question
 
   function setNextQuestion() {
     resetStatus();
     displayQuestion();
   }
+
+
   
