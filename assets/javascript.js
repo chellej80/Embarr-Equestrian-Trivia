@@ -230,7 +230,7 @@ const questionBank = [
 
   //Function to display the question in the question container 
 
-  function showQuestion() {
+  function displayQuestion() {
     const question = shuffledQuestions[currentQuestionIndex];
     questionElement.innerText = question.question;
     question.answers.forEach((answer) => {
@@ -243,5 +243,12 @@ const questionBank = [
         button.addEventListener("click", onOptionClick);
         answerBtnContainer.appendChild(button);
     });
+  }
+
+  // Function to display the next Question
+
+  function setNextQuestion() {
+    resetStatus();
+    displayQuestion();
   }
   
