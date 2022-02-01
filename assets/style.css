@@ -88,7 +88,22 @@ body {
   }
 
   .start-btn, .next-btn, .refresh-btn, .home-btn {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     padding: 10px 20px;
   }
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  #results {
+    text-align: center;
+  }
+  
