@@ -216,13 +216,32 @@ const questionBank = [
   ];
 
   // Create the Quiz Functions & event listners 
-
+  startBtn.addEventListener("click", startQuiz);
   
   // Start quiz - click on play quiz button to exe this function
   function startQuiz() {
     score = 0;
-    currentQuestionIndex = 0;
-    shuffledQuestions = questionBank.sort(() => Math.random() - 0.5);
-    setNextQuestion();
+    startBtn.classList.add('hide');
+	currentQuestionIndex = 0;
+	shuffledQuestions = questionBank.sort(() => Math.random() - 0.5);
+	questionContainer.classList.remove('hide');
+	setNextQuestion();
+  }
+
+  //Function to display the question in the question container 
+
+  function showQuestion() {
+    const question = shuffledQuestions[currentQuestionIndex];
+    questionElement.innerText = question.question;
+    question.answers.forEach((answer) => {
+        const button = document.createElement("button");
+        button.innerText = answer.text;
+        button.classList.add("btn");
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", onOptionClick);
+        answerBtnContainer.appendChild(button);
+    });
   }
   
