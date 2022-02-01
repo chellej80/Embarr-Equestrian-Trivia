@@ -1,16 +1,18 @@
-// set the variables 
 // declare the constant variables
+// set the variables for the control buttons
 const startBtn = document.getElementById("start-btn");
 const nextBtn = document.getElementById("next-btn");
 const homeBtn = document.getElementById("home-btn");
+const refreshBtn = document.getElementById("refresh-btn");
+
+//set the variables for the quiz, question & answer containers
 const questionContainer = document.getElementById("question-container");
 const questionElement = document.getElementById("question");
 const answerBtnContainer = document.getElementById("answer-buttons");
-const results = document.getElementById("results");
-const refreshBtn = document.getElementById("refresh-btn");
+const results = document.getElementById("results"); // variable for the scoring
+
 
 // declare the scoped variables 
-
 let shuffledQuestions, currentQuestionIndex;
 let score = 0; // Variable to keep track of user's answers
 
