@@ -1,3 +1,14 @@
+/*Code inspired and adapted from the following tutorials and sources:
+https://www.sitepoint.com/simple-javascript-quiz/
+https://www.youtube.com/watch?v=f4fB9Xg2JEY&list=WL&index=14
+https://www.youtube.com/watch?v=w-OKdSHRlfA&list=WL&index=13
+https://flexiple.com/disable-button-javascript/
+https://www.youtube.com/watch?v=jvk1pFNqXaw&t=1300s
+https://stackoverflow.com/questions/28610365/how-can-i-add-an-event-for-a-one-time-click-to-a-function
+https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw
+*/
+
+
 // declare the constant variables
 // set the variables for the control buttons
 const startBtn = document.getElementById("start-btn");
@@ -12,7 +23,7 @@ const results = document.getElementById("results"); // variable for the scoring
 
 
 // declare the scoped variables 
-let shuffledQuestions, currentQuestionIndex;
+let shuffledQuestions, currentQuestionIndex;// var for shuffling the questions/ var for knowing which question we are on inside the shuffle and set to undefined 
 let score = 0; // Variable to keep track of user's answers
 
 //Set Questions for Quiz - 10 questions set 
@@ -166,7 +177,7 @@ const questionBank = [{
 }];
 
 
-// Create the Quiz Functions & event listners 
+// Create the event listners 
 startBtn.addEventListener("click", startQuiz);
 refreshBtn.addEventListener('click', refreshPage);
 
@@ -176,26 +187,27 @@ nextBtn.addEventListener('click', () => {
 });
 
 
+//Create Quiz Functions 13 in total
 
 // Start quiz - click on play quiz button to exe this function
 function startQuiz() {
-    score = 0;
-    startBtn.classList.add('hide');
-    currentQuestionIndex = 0;
-    shuffledQuestions = questionBank.sort(() => Math.random() - 0.5);
-    questionContainer.classList.remove('hide');
-    setNextQuestion();
+    score = 0; // Set score to 0 at beginning of quiz
+    startBtn.classList.add('hide'); // hide the start button once quiz started 
+    currentQuestionIndex = 0; // set current quiz question index to 0 at start of quiz
+    shuffledQuestions = questionBank.sort(() => Math.random() - 0.5); //shuffle the questions so they are displayed randomly
+    questionContainer.classList.remove('hide'); // on starting the game show the quiz questions
+    setNextQuestion(); //Function called to populate the quiz question
 
 }
 
 // Function to reset the answer variable & display the next Question
 
 function setNextQuestion() {
-    resetStatus();
-    displayQuestion(shuffledQuestions[currentQuestionIndex]);
+    resetStatus();// resets the questions/ answers each time you move to the next one
+    displayQuestion(shuffledQuestions[currentQuestionIndex]); // shuffle & display next question
 }
 
-//Function to display the question in the question container 
+//Function to display the questions & answers in the question container - code adapted from https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw
 
 function displayQuestion() {
     const question = shuffledQuestions[currentQuestionIndex];
@@ -222,32 +234,32 @@ function onOptionClick(event) {
 
     const correct = selectedButton.dataset.correct;
     if (correct) {
-        selectedButton.removeEventListener('click', onOptionClick);
-        score++;
+        selectedButton.removeEventListener('click', onOptionClick);// on selection of an answer prevent the ability to select another
+        score++; // if answer selected is correct increment the score by 1
     }
     Array.from(answerContainer.children).forEach(button => {
         setStatus(button, button.dataset.correct);
     });
-    results.innerHTML = `Total Score is: ${score} Questions Correct out of ${shuffledQuestions.length}`;
+    results.innerHTML = `Total Score is: ${score} Questions Correct out of ${shuffledQuestions.length}`; // Display the score after each answer is selected 
 
 
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
 
 
-        nextBtn.classList.remove('hide');
+        nextBtn.classList.remove('hide'); //If all questions have not been answers display the next button to move to next question
 
 
 
 
     } else {
 
-        endQuiz();
+        endQuiz();// If all questions have been answered go to Quiz completed 
 
     }
 }
 
 
-// 
+//sets the answer status to correct or incorect on button selection
 function setStatus(element, correct) {
     clearStatus(element);
     if (correct) {
@@ -261,13 +273,14 @@ function setStatus(element, correct) {
 // function to reset the answer selections when user clicks the next button
 function resetStatus() {
 
-    nextBtn.classList.add('hide');
+    nextBtn.classList.add('hide');// Hides the next button until answer has been selected 
     while (answerContainer.firstChild) {
-        answerContainer.removeChild(answerContainer.firstChild);
+        answerContainer.removeChild(answerContainer.firstChild);// Removes extra answer containers where some choices only have 2 options instead on one
     }
 }
 
 
+// clears the answer status selection
 function clearStatus(element) {
     element.classList.remove('correct');
     element.classList.remove('wrong');
@@ -276,13 +289,13 @@ function clearStatus(element) {
 
 
 
-// Function that reloads the page
+// Function that reloads the page & restarts the quiz
 function refreshPage() {
     window.location.reload();
 }
 
 
-
+//Function to display Restart quiz option and final results, called when all questions have been answered
 function endQuiz() {
     questionContainer.innerHTML = `Well Done Quiz completed :)`;
     questionContainer.classList.remove('hide');
