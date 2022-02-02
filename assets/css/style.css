@@ -22,7 +22,7 @@ body {
     font-family: Merriweather, Oswald;
     font-weight: 300;
     color: #002980;
-    background-color: #ffffbf;
+    background-color: rgb(199, 213, 228);
     
     
     
@@ -41,14 +41,14 @@ body {
     display: flex;
     position: absolute;
     width: 100%;
-    overflow: hidden;
+    /*overflow: hidden;*/
     
     
   }
 
 /*style hero image for Index page*/
 #hero-image {
-    height: max-content;
+    height: 1000px;
     width: 100%;
     background: url("../images/hero_image_horse_field.webp") no-repeat center center fixed;
   }
@@ -63,13 +63,13 @@ body {
     font-family: Merriweather, Oswald;
     letter-spacing: 2px;  
     max-width: 750px;
-    height: auto;
+    min-height: 300px;
     margin: 200px auto;
     /*margin-left: 50px;*/
     padding: 20px;
     /*left: 0;*/
     position: relative;
-    
+    overflow: hidden;
     background-color: rgba(23, 67, 88, 0.1);
     -webkit-box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
             box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
