@@ -1,4 +1,5 @@
-// declare the constant variables
+
+	// declare the constant variables
 // set the variables for the control buttons
 const startBtn = document.getElementById("start-btn");
 const nextBtn = document.getElementById("next-btn");
@@ -71,7 +72,100 @@ const questionBank = [{
 		text: '3',
 		correct: true
 	}]
-}];
+
+}, {
+	question: 'What do you call a female horse under 4 years',
+	answers: [{
+		text: 'Mare',
+		correct: false
+	}, {
+		text: 'Colt',
+		correct: false
+	},{
+		text: 'Filly',
+		correct: true
+	},{
+		text: 'Foal',
+		correct: false
+	}]
+
+},{
+	question: "What is also known as Monday Morning Sickness?",
+	answers: [{
+		text: 'Colic',
+		correct: false
+	}, {
+		text: 'Lameness',
+		correct: false
+	}, {
+		text: 'Tying up',
+		correct: true
+	}, {
+		text: 'Winding Down',
+		correct: false
+	}]
+},{
+	question: "What do de-wormers do?",
+	answers: [{
+		text: 'Put worms in your horse',
+		correct: false
+	}, {
+		text: 'Protect your horse from West Nile Virus',
+		correct: false
+	}, {
+		text: 'Cause lameness',
+		correct: false
+	}, {
+		text: 'Kill worms inside your horse',
+		correct: true
+	}]
+},{
+		question: "Your horse has just had his dinner, which of these must you NOT do now?",
+		answers: [{
+			text: 'Put him in the field',
+			correct: false
+		}, {
+			text: 'Groom Him',
+			correct: false
+		}, {
+			text: 'Ride Him',
+			correct: true
+		}, {
+			text: 'Muck Out',
+			correct: false
+		}]
+		},{
+		question: 'How many teeth does a mature horse have?',
+		answers: [{
+			text: '16-18',
+			correct: false
+		}, {
+			text: '25-30',
+			correct: false
+		}, {
+			text: '50-52',
+			correct: false
+		}, {
+			text: '36-40',
+			correct: true
+		}]
+	},{
+		question: ' Which of these should your horse be fed the most of?',
+		answers: [{
+			text: 'Oats',
+			correct: false
+		}, {
+			text: 'Sugar Beet',
+			correct: false
+		}, {
+			text: 'Hay',
+			correct: true
+		}, {
+			text: 'Straw',
+			correct: false
+		}]
+	}];
+
 
   // Create the Quiz Functions & event listners 
   startBtn.addEventListener("click", startQuiz);
@@ -195,11 +289,11 @@ function clearStatus(element) {
     }*/
   
     function endQuiz(){
+		questionContainer.innerHTML = `Quiz completed`;
         questionContainer.classList.remove('hide');
-        refreshBtn.innerText = 'Restart';
+        refreshBtn.innerText = 'Try Again ?';
         refreshBtn.classList.remove('hide');
         //homeBtn.innerText = 'Go Home';
        //homeBtn.classList.remove('hide');
-        questionContainer.innerHTML = `Quiz completed`;
         
     }

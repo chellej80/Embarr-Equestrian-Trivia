@@ -26,6 +26,7 @@ body {
     
     
     
+    
    
 }
 
@@ -40,7 +41,8 @@ body {
     
     display: flex;
     position: absolute;
-    width: 100%;
+    
+    width:100%;
     /*overflow: hidden;*/
     
     
@@ -101,6 +103,7 @@ body {
     --hue: var(--hue-neutral);
     border: 1px solid hsl(var(--hue), 100%, 30%);
     background-color: hsl(var(--hue), 100%, 40%);
+    
     border-radius: 10px;
     padding: 10px 10px;
     margin: 10px;
@@ -140,18 +143,18 @@ body {
     display: none;
   }
   
-  #question {
-    text-align: center;
-    
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-
   #results {
     text-align: center;
     color: black;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
 
+  #question-container {
+
+    text-align: center;
+    
+    font-weight: bold;
+    font-size: 1.2rem;
   }
   
