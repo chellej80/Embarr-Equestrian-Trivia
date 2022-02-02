@@ -2,9 +2,9 @@
 
 ## Overview
 
-Embarr Equestrian Trivia challenge is a website page designed to be part of a bigger site for example Embarr Equestrian . The site is targeted at horse owners or horse lovers  that would like a fun interactive way of learning about general horse knowledge or care.
+Embarr Equestrian Trivia challenge is a website page designed to be part of a bigger site for example Embarr Equestrian . The quiz page is targeted at horse owners or horse lovers  that would like a simple fun interactive way of learning about general horse knowledge or care.
 
-The pages design were developed with mobile responsiveness at the forefront. It consists of one html page that should be developed further in order to integrate with its master website [Embarr Equestrian - Deployed Site Link](https://chellej80.github.io/Embarr-Equestrian/).
+The page design was developed with mobile responsiveness at the forefront. It consists of one html page that should be developed further with improvements to the page structure in order to integrate with its master website [Embarr Equestrian - Deployed Site Link](https://chellej80.github.io/Embarr-Equestrian/).
 
 <div><center><h2>
 Site Mockup
@@ -15,57 +15,60 @@ Site Mockup
 ## The quiz goals are:
 
 * Provide a fun interactive learning experience
-* Provide a great user experience on all mobile devices,
+* Provide a great user experience on all mobile devices
 * Be easy to navigate
 * Give clear calls to action
+* Function in a logical correct way
 
 
 ## User Stories
 
+
 ### First Time User 
 
-- I want to be able to navigate the site easily and understand its objectives 
-- I want to clearly understand how to complete the quiz
--
+- I want to be able to navigate the site page/ quiz and understand its objectives clearly without confusion. 
+- I want to clearly understand how to complete the quiz.
+
 
 
 ### Returning/ Regular Visitor
 
-- I would like to see an events page / booking form and up to date information/ images, current content not out of date.
-- I would like to see a newsletter subscription offer 
-- I would like to see regular updates to the youtube video account associated with the business.
+- I would like to see more quiz options on a range equine topics for adults and children.
+- I would like to see quizs updated & refreshed monthly with new challenges.
+
 
 
 ### Target Audience
 
+- Equine enthusiasts that want to learn more about equine general knowledge/ horse care in a simple fun interactive way.
+
  
-
-
-
 
 ## Features 
 
-### The Header Section
+### The About Section
+
+#### Contains:
 
 - __Title__
 
- Featured on all three pages,
+ - __Logo__
 
-- __Logo__
-
-    The logo I created simply using a combination of text and a font awsome icon. The logo is a hyperlink that takes the user to the homepage.
+    The logo I created simply using a combination of text and a font awsome icon. 
     
-    <img src="assets/media/logo.jpg">
+    <img src="assets/images/logo.jpg">
+
+- __Quiz Text__
+
+The Quiz text is a short simple description of the quiz and how to navigate it. If the quiz is developed further, more detailed instructions may be necessary. Currently the structure of the quiz is simple and structured so the user is presented with a clear navigation path through the quiz, without the need for excessive instructions.
 
 
 ### The Hero Image
 
-- __The landing page hero image__
+- __The page hero image__
 
-The landing page includes a hero image of a horse with a text overlay 'About' to allow the user to quickly see exactly what the site quiz is about.
+The landing page includes a hero image of a horse with a text overlay to allow the user to quickly see exactly what the site quiz is about.
 This section introduces the user to Embarr Equestrian with an eye catching hero image to grab their attention.
-
-
 
 
 ### Features Left to Implement
@@ -80,6 +83,8 @@ This section introduces the user to Embarr Equestrian with an eye catching hero 
     - Add a button to share results to social media.
     - Save your high scores using localStorage.
     - Add a countdown timer to see if people can beat the clock.
+    - Hide the text when starting the quiz. 
+    - Integrate the quiz page with the main master website, add a header/ navigation/ further quiz sections of various levels/ topics & footer.
        
 
 ## Languages Used
@@ -93,12 +98,12 @@ This section introduces the user to Embarr Equestrian with an eye catching hero 
 - [Git/ Github](https://github.com/) - Git/Github was used for version control, storage and deployment of the project.
 - [Font awesome](https://fontawesome.com/) - Font awesome icons were used throughout the site and for the logo creation.
 - [Google Fonts](https://fonts.google.com/) - Were used to import the Merriweather font used throughout the site.
-- [Font awesome](https://fontawesome.com/) - Was used to link to the icons used across all the pages
+
 - [Hover: CSS](https://www.w3schools.com/cssref/sel_hover.asp) - Was used to created the pop effect for the linked three images on the landing page and the colour hover effect   in navigation menu & slideshow next/prev arrows.
 - [Javascript](https://www.w3schools.com/w3css/w3css_slideshow.asp) - JS script was used to action the manual slideshow function.
 - [Squoosh](https://squoosh.app/) - This was used to prepare the images for web optimisation
-- 
-- [3D Paint](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99#activetab=pivot:overviewtab) - This was used to crop and add filters to the images.
+- [Techsini](https://techsini.com/multi-mockup) - This was used for the mockup image in the overview.
+
 
 
 
