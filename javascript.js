@@ -64,7 +64,7 @@ const questionBank = [{
 		correct: false
 	}]
 }, {
-	question: 'How many beats in Canter',
+	question: 'How many beats in Canter?',
 	answers: [{
 		text: '4',
 		correct: false
@@ -72,6 +72,7 @@ const questionBank = [{
 		text: '3',
 		correct: true
 	}]
+	
 
 }, {
 	question: 'What do you call a female horse under 4 years',
@@ -289,7 +290,7 @@ function clearStatus(element) {
     }*/
   
     function endQuiz(){
-		questionContainer.innerHTML = `Quiz completed`;
+		questionContainer.innerHTML = `Well Done Quiz completed :)`;
         questionContainer.classList.remove('hide');
         refreshBtn.innerText = 'Try Again ?';
         refreshBtn.classList.remove('hide');
