@@ -4,7 +4,13 @@
 
 Embarr Equestrian Trivia challenge is a website page designed to be part of a bigger site for example Embarr Equestrian . The site is targeted at horse owners or horse lovers  that would like a fun interactive way of learning about general horse knowledge or care.
 
-The pages design were developed with mobile responsiveness at the forefront. It consists of three html pages that all follow the same structured layout.
+The pages design were developed with mobile responsiveness at the forefront. It consists of one html page that should be developed further in order to integrate with its master website [Embarr Equestrian - Deployed Site Link](https://chellej80.github.io/Embarr-Equestrian/).
+
+<div><center><h2>
+Site Mockup
+</h2></center></div>
+
+<img src=assets/images/mockup.JPG>
 
 ## The quiz goals are:
 
