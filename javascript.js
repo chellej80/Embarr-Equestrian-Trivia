@@ -195,11 +195,11 @@ function clearStatus(element) {
     }*/
   
     function endQuiz(){
-        //questionContainer.classList.remove('hide');
+        questionContainer.classList.remove('hide');
         refreshBtn.innerText = 'Restart';
         refreshBtn.classList.remove('hide');
-        homeBtn.innerText = 'Go Home';
-        homeBtn.classList.remove('hide');
+        //homeBtn.innerText = 'Go Home';
+       //homeBtn.classList.remove('hide');
         questionContainer.innerHTML = `Quiz completed`;
         
     }
