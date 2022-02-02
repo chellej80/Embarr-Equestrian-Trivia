@@ -50,9 +50,18 @@ body {
 #hero-image {
     height: 1000px;
     width: 100%;
-    background: url("../images/hero_image_horse_field.webp") no-repeat center center fixed;
+    background: url("../images/hero_image_horse_field.webp") no-repeat center center;
   }
 
+
+  hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:#FFFF00;
+    height: 1px;
+  }
   
   
   #Quiz-container {
