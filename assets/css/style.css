@@ -1,165 +1,188 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather:wght@300&family=Oswald:wght@300&display=swap");
-
 * {
-    margin: 0;
-    padding: 0;
-    border: none;
+	margin: 0;
+	padding: 0;
+	border: none;
 }
 
-*{
-  box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
 
 .header {
-  height: 100px;
+	height: 100px;
 }
+
 
 /*set font poperties for all pages*/
+
 body {
-    font-family: Merriweather, Oswald;
-    font-weight: 300;
-    color: #002980;
-    background-color: rgb(199, 213, 228);
-       
-   
+	font-family: Merriweather, Oswald;
+	font-weight: 300;
+	color: #002980;
+	background-color: rgb(199, 213, 228);
 }
+
 
 /*set the root colors for the Quiz buttons Right and Wrong answers */
+
 :root {
-    --hue-neutral: 210;
-    --hue-wrong: 5;
-    --hue-correct: 160;
-  }
-
-  /*create a flex container for the Quiz text/hero image & Quiz container*/
-  #hero-outer {
-    display: flex;
-    position: absolute;
-    width:100%;
-     
-    
-  }
-
-/*style hero image for Index page*/
-#hero-image {
-    height: 1054px;
-    width: 100%;
-    background: url("../images/hero_image_horse_field.webp") no-repeat center center;
-  }
-
-/*styling for line between text and Quiz*/
-  hr {
-    border: 0;
-    clear:both;
-    display:block;
-    width: 95%;               
-    background-color:#002980;
-    height: 3px;
-  }
-  
-  /*styling for the Quiz container*/
-  #Quiz-container {
-        display: block;
-    align-items:center;
-    font-size: 100%;
-    font-family: Merriweather, Oswald;
-    letter-spacing: 2px;  
-    max-width: 750px;
-    min-height: 300px;
-    margin: 200px auto;
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
-    background-color: rgba(23, 67, 88, 0.1);
-    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-  }
-
-  h2 {
-    text-align: center; 
-    
-  }
-
-  /*styling for the Quiz Buttons*/
-  .btn-column {
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    gap: 10px;
-    margin: 15px;
-    
-  }
-
-  /*styling for the control buttons*/
-  .btn {
-    --hue: var(--hue-neutral);
-    border: 1px solid hsl(var(--hue), 100%, 30%);
-    background-color: hsl(var(--hue), 100%, 40%);
-    cursor: pointer;
-    border-radius: 10px;
-    padding: 10px 10px;
-    margin: 10px;
-    color: whitesmoke;
-    outline: none;
-    font-family: Merriweather, Oswald;
-    font-size: 1rem;
-  }
-
-  /*button hover effect*/
-  .btn:hover {
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
-            cursor: pointer;
+	--hue-neutral: 210;
+	--hue-wrong: 5;
+	--hue-correct: 160;
 }
 
-/*styling for button for correct answer*/
-.btn.correct {
-    --hue: var(--hue-correct);
-    color: black;
-    font-weight: bold;
 
-  }
-  
-  /*styling for button for wrong answer*/
-  .btn.wrong {
-    --hue: var(--hue-wrong);
-  }
+/*create a flex container for the Quiz text/hero image & Quiz container*/
 
-  /*styling for individual control buttons*/
+#hero-outer {
+	display: flex;
+	position: absolute;
+	width: 100%;
+}
 
-  .start-btn, .next-btn, .refresh-btn {
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 10px 10px;
-  }
+
+/*style hero image for Index page*/
+
+#hero-image {
+	height: 1054px;
+	width: 100%;
+	background: url("../images/hero_image_horse_field.webp") no-repeat center center;
+}
+
+
+/*styling for line between text and Quiz*/
+
+hr {
+	border: 0;
+	clear: both;
+	display: block;
+	width: 95%;
+	background-color: #002980;
+	height: 3px;
+}
+
+
+/*styling for the Quiz container*/
+
+#Quiz-container {
+	display: block;
+	align-items: center;
+	font-size: 100%;
+	font-family: Merriweather, Oswald;
+	letter-spacing: 2px;
+	max-width: 750px;
+	min-height: 300px;
+	margin: 200px auto;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-color: rgba(23, 67, 88, 0.1);
+	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+h2 {
+	text-align: center;
+}
+
+
+/*styling for the Quiz Buttons*/
+
+.btn-column {
+	display: grid;
+	grid-template-columns: repeat(1, auto);
+	gap: 10px;
+	margin: 15px;
+}
+
 
 /*styling for the control buttons*/
-  .controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /*Hide class*/
-  .hide {
-    display: none;
-  }
-  
-  /*styling for results/score html*/
-  #results {
-    text-align: center;
-    margin: 15px;
-    font-weight: bold;
-    font-size: 1.3rem;
-    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-    background-color: rgb(220, 243, 177);
-    
-    
-  }
 
-  /*styling for the question container text*/
-  #question-container {
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-  
+.btn {
+	--hue: var(--hue-neutral);
+	border: 1px solid hsl(var(--hue), 100%, 30%);
+	background-color: hsl(var(--hue), 100%, 40%);
+	cursor: pointer;
+	border-radius: 10px;
+	padding: 10px 10px;
+	margin: 10px;
+	color: whitesmoke;
+	outline: none;
+	font-family: Merriweather, Oswald;
+	font-size: 1rem;
+}
+
+
+/*button hover effect*/
+
+.btn:hover {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+
+/*styling for button for correct answer*/
+
+.btn.correct {
+	--hue: var(--hue-correct);
+	color: black;
+	font-weight: bold;
+}
+
+
+/*styling for button for wrong answer*/
+
+.btn.wrong {
+	--hue: var(--hue-wrong);
+}
+
+
+/*styling for individual control buttons*/
+
+.start-btn,
+.next-btn,
+.refresh-btn {
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding: 10px 10px;
+}
+
+
+/*styling for the control buttons*/
+
+.controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*Hide class*/
+
+.hide {
+	display: none;
+}
+
+
+/*styling for results/score html*/
+
+#results {
+	text-align: center;
+	margin: 15px;
+	font-weight: bold;
+	font-size: 1.3rem;
+	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+	background-color: rgb(220, 243, 177);
+}
+
+
+/*styling for the question container text*/
+
+#question-container {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
