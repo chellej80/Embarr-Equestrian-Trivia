@@ -16,9 +16,9 @@ body {
     font-family: Merriweather, Oswald;
     font-weight: 300;
     color: #002980;
-    background-color: #ffffbf;
+    /*background-color: #ffffbf;
     
-    background-image: url("assets/images/hero_image_horse_field.webp") no-repeat center center;
+    background-image: url("assets/images/hero_image_horse_field.webp") no-repeat center center;*/
    
 }
 
@@ -38,7 +38,7 @@ body {
     overflow: hidden;
   }
 
-  style hero image for Index page
+  /*style hero image for Index page
 #hero-image {
     
     width: 100%;
@@ -47,7 +47,7 @@ body {
   
   #Quiz-container {
     
-    display: block;
+    /*display: block;*/
     align-items:center;
     font-size: 100%;
     font-family: Merriweather, Oswald;
