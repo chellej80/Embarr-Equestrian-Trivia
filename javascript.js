@@ -23,7 +23,7 @@ const results = document.getElementById("results"); // variable for the scoring
 
 
 // declare the scoped variables 
-let shuffledQuestions, currentQuestionIndex;// var for shuffling the questions/ var for knowing which question we are on inside the shuffle and set to undefined 
+let shuffledQuestions, currentQuestionIndex; // var for shuffling the questions/ var for knowing which question we are on inside the shuffle and set to undefined 
 let score = 0; // Variable to keep track of user's answers
 
 //Set Questions for Quiz - 10 questions set 
@@ -220,7 +220,7 @@ function displayQuestion() {
             button.dataset.correct = answer.correct;
         }
         button.addEventListener("click", onOptionClick);
-        answerContainer.appendChild(button);
+        answerContainer.appendChild(button); // clear out and set next questions 
 
     });
 }
@@ -234,7 +234,7 @@ function onOptionClick(event) {
 
     const correct = selectedButton.dataset.correct;
     if (correct) {
-        selectedButton.removeEventListener('click', onOptionClick);// on selection of an answer prevent the ability to select another
+        selectedButton.removeEventListener('click', onOptionClick); // on selection of an answer prevent the ability to select another
         score++; // if answer selected is correct increment the score by 1
     }
     Array.from(answerContainer.children).forEach(button => {
@@ -274,11 +274,10 @@ function setStatus(element, correct) {
 function resetStatus() {
 
     nextBtn.classList.add('hide');// Hides the next button until answer has been selected 
-    while (answerContainer.firstChild) {
-        answerContainer.removeChild(answerContainer.firstChild);// Removes extra answer containers where some choices only have 2 options instead on one
-    }
+    while (answerContainer.firstChild) { 
+        answerContainer.removeChild(answerContainer.firstChild);
+	}
 }
-
 
 // clears the answer status selection
 function clearStatus(element) {
@@ -301,6 +300,5 @@ function endQuiz() {
     questionContainer.classList.remove('hide');
     refreshBtn.innerText = 'Try Again ?';
     refreshBtn.classList.remove('hide');
-
 
 }
