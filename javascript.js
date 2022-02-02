@@ -115,6 +115,7 @@ const questionBank = [{
         }
         button.addEventListener("click", onOptionClick);
         answerContainer.appendChild(button);
+		
     });
 }
 
@@ -122,20 +123,39 @@ const questionBank = [{
   // function for selecting the answer
 
   function onOptionClick(event) {
+	
+	
     const selectedButton = event.target;
+	
+
     const correct = selectedButton.dataset.correct;
-       
-    if (correct) {
-      score++; // if answer is correct increment the result by 1
-    }
+	if (correct) {
+		
+		score++; // if answer is correct increment the result by 1 
+		results.innerHTML = `${score} questions correct out of ${shuffledQuestions.length}`; 
+
+		
+    
+	      
     Array.from(answerContainer.children).forEach(button => {
       setStatus(button, button.dataset.correct);
+	  button.removeEventListener("click", onOptionClick);// disables the click event for the answer buttons 
     });
-    results.innerHTML = `${score} questions correct out of ${shuffledQuestions.length}`;
+
+	
+	}
+
+	
+	
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
+
+		
+	
       nextBtn.classList.remove('hide');
       
-    
+	  
+	  
+
     } else {
   
       endQuiz();
@@ -149,6 +169,7 @@ const questionBank = [{
 	clearStatus(element);
 	if (correct) {
 		element.classList.add('correct');
+		
 	} else {
 		element.classList.add('wrong');
 	}
@@ -169,7 +190,8 @@ function clearStatus(element) {
 	element.classList.remove('wrong');
 }
 
-  
+
+
 
   // Function that reloads the page
     function refreshPage() {
