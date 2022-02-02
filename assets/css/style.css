@@ -20,8 +20,7 @@ body {
     font-weight: 300;
     color: #002980;
     background-color: rgb(199, 213, 228);
-    
-     
+       
    
 }
 
@@ -32,7 +31,7 @@ body {
     --hue-correct: 160;
   }
 
-  
+  /*create a flex container for the Quiz text/hero image & Quiz container*/
   #hero-outer {
     display: flex;
     position: absolute;
@@ -48,7 +47,7 @@ body {
     background: url("../images/hero_image_horse_field.webp") no-repeat center center;
   }
 
-
+/*styling for line between text and Quiz*/
   hr {
     border: 0;
     clear:both;
@@ -58,10 +57,9 @@ body {
     height: 3px;
   }
   
-  
+  /*styling for the Quiz container*/
   #Quiz-container {
-    
-    display: block;
+        display: block;
     align-items:center;
     font-size: 100%;
     font-family: Merriweather, Oswald;
@@ -78,17 +76,19 @@ body {
 
   h2 {
     text-align: center; 
+    
   }
 
+  /*styling for the Quiz Buttons*/
   .btn-column {
     display: grid;
-    
     grid-template-columns: repeat(1, auto);
     gap: 10px;
-    margin: 20px 0;
+    margin: 20px;
     
   }
 
+  /*styling for the control buttons*/
   .btn {
     --hue: var(--hue-neutral);
     border: 1px solid hsl(var(--hue), 100%, 30%);
@@ -99,8 +99,11 @@ body {
     margin: 10px;
     color: whitesmoke;
     outline: none;
+    font-family: Merriweather, Oswald;
+    font-size: 1rem;
   }
 
+  /*button hover effect*/
   .btn:hover {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
@@ -108,46 +111,54 @@ body {
             cursor: pointer;
 }
 
-
+/*styling for button for correct answer*/
 .btn.correct {
     --hue: var(--hue-correct);
     color: black;
+    font-weight: bold;
+
   }
   
+  /*styling for button for wrong answer*/
   .btn.wrong {
     --hue: var(--hue-wrong);
   }
 
-  .start-btn, .next-btn, .refresh-btn, .home-btn {
+  /*styling for individual control buttons*/
+
+  .start-btn, .next-btn, .refresh-btn {
     font-size: 1.2rem;
     font-weight: bold;
     padding: 10px 20px;
   }
 
+/*styling for the control buttons*/
   .controls {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
+  /*Hide class*/
   .hide {
     display: none;
   }
   
+  /*styling for results/score html*/
   #results {
     text-align: center;
-    
+    margin: 20px;
     font-weight: bold;
     font-size: 1.3rem;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-    
     background-color: rgb(220, 243, 177);
+    
+    
   }
 
+  /*styling for the question container text*/
   #question-container {
-
     text-align: center;
-    
     font-weight: bold;
     font-size: 1.2rem;
   }
