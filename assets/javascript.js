@@ -119,7 +119,7 @@ const questionBank = [{
 }
 
 
-  // function
+  // function for selecting the answer
 
   function onOptionClick(event) {
     const selectedButton = event.target;
@@ -171,10 +171,16 @@ function clearStatus(element) {
 
   
 
-  
+  // Function that reloads the page
     function refreshPage() {
         window.location.reload();
     }
+
+    // Function that when clicked takes the user to the homepage of the website
+    /*function goHome(){
+	
+        window.location.href = "index.html"; 
+    }*/
   
     function endQuiz(){
         questionContainer.classList.remove('hide');
