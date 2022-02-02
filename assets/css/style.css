@@ -10,9 +10,6 @@
   box-sizing: border-box;
 }
 
-
-
-
 .header {
   height: 100px;
 }
@@ -32,9 +29,9 @@ body {
 
 /*set the root colors for the Quiz container*/
 :root {
-    --hue-neutral: 200;
-    --hue-wrong: 10;
-    --hue-correct: 150;
+    --hue-neutral: 210;
+    --hue-wrong: 5;
+    --hue-correct: 160;
   }
 
   #hero-outer {
@@ -60,9 +57,9 @@ body {
     border: 0;
     clear:both;
     display:block;
-    width: 96%;               
-    background-color:#FFFF00;
-    height: 1px;
+    width: 95%;               
+    background-color:#002980;
+    height: 5px;
   }
   
   
@@ -145,9 +142,12 @@ body {
   
   #results {
     text-align: center;
-    color: black;
+    
     font-weight: bold;
     font-size: 1.3rem;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    
+    background-color: rgb(220, 243, 177);
   }
 
   #question-container {

@@ -229,7 +229,7 @@ const questionBank = [{
 	  Array.from(answerContainer.children).forEach(button => {
 		setStatus(button, button.dataset.correct);
 	  });
-	  results.innerHTML = `${score} questions correct out of ${shuffledQuestions.length}`;
+	  results.innerHTML = `Total Score is: ${score} Questions Correct out of ${shuffledQuestions.length}`;
 	  	
 	
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
