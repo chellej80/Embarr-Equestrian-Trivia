@@ -1,108 +1,222 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Embarr Equestrian Trivia Challenge 
 
-Welcome chellej80,
+## Overview
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Embarr Equestrian Trivia challenge is a website page designed to be part of a bigger site for example Embarr Equestrian . The site is targeted at horse owners or horse lovers  that would like a fun interactive way of learning about general horse knowledge or care.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The pages design were developed with mobile responsiveness at the forefront. It consists of three html pages that all follow the same structured layout.
 
-## Gitpod Reminders
+## The quiz goals are:
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+* Provide a fun interactive learning experience
+* Provide a great user experience on all mobile devices,
+* Be easy to navigate
+* Give clear calls to action
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+## User Stories
 
-Another blue button should appear to click: _Open Browser_.
+### First Time User 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- I want to be able to navigate the site easily and understand its objectives 
+- I want to clearly understand how to complete the quiz
+-
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+### Returning/ Regular Visitor
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- I would like to see an events page / booking form and up to date information/ images, current content not out of date.
+- I would like to see a newsletter subscription offer 
+- I would like to see regular updates to the youtube video account associated with the business.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Target Audience
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+ 
 
-------
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Features 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### The Header Section
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- __Title__
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+ Featured on all three pages,
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- __Logo__
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+    The logo I created simply using a combination of text and a font awsome icon. The logo is a hyperlink that takes the user to the homepage.
+    
+    <img src="assets/media/logo.jpg">
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### The Hero Image
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- __The landing page hero image__
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The landing page includes a hero image of a horse with a text overlay 'About' to allow the user to quickly see exactly what the site quiz is about.
+This section introduces the user to Embarr Equestrian with an eye catching hero image to grab their attention.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Features Left to Implement
+- Additional features 
+    - UserName and login features
+    - A dedicated 404 page 
+    - Add a progress bar.
+    -  Let users review answers before submitting.
+    - Give users a summary of their answers after they submit.
+    - Update the navigation to let users skip to any question number.
+    - Create custom messages for each level of results. For example, if someone scores 8/10 or higher, call them a quiz ninja.
+    - Add a button to share results to social media.
+    - Save your high scores using localStorage.
+    - Add a countdown timer to see if people can beat the clock.
+       
 
-------
+## Languages Used
 
-## FAQ about the uptime script
+- HTML
+- CSS
+- Javascript
 
-**Why have you added this script?**
+## Frameworks, Libaries and technologies used
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- [Git/ Github](https://github.com/) - Git/Github was used for version control, storage and deployment of the project.
+- [Font awesome](https://fontawesome.com/) - Font awesome icons were used throughout the site and for the logo creation.
+- [Google Fonts](https://fonts.google.com/) - Were used to import the Merriweather font used throughout the site.
+- [Font awesome](https://fontawesome.com/) - Was used to link to the icons used across all the pages
+- [Hover: CSS](https://www.w3schools.com/cssref/sel_hover.asp) - Was used to created the pop effect for the linked three images on the landing page and the colour hover effect   in navigation menu & slideshow next/prev arrows.
+- [Javascript](https://www.w3schools.com/w3css/w3css_slideshow.asp) - JS script was used to action the manual slideshow function.
+- [Squoosh](https://squoosh.app/) - This was used to prepare the images for web optimisation
+- 
+- [3D Paint](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99#activetab=pivot:overviewtab) - This was used to crop and add filters to the images.
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Testing Conducted 
 
-**So….?**
+### Usability testing 
+I had work colleagues and family members assistance to test the site usability. The conclusion of this testing was that:
+- All pages of the site were understandable and easy to use
+- Buttons, links, and fields were convenient for use
+- There is access to the Main navigation menu from all pages via the desktop version and mobile version.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Content 
 
-**Can I opt out?**
+I reviewed all content on the site for:
+- grammar and spelling mistakes
+- Images are placed properly with proper sizes &    displaying as expected
+- Instructions are clear and contain correct information
+- Verified all text/ headings are displaying correctly
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Navigation
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+I tested all the navigation functions via desktop and mobile/ ipad to ensure that they are functioning and linking to the correct pages.
 
-**Anything more?**
+### Links testing
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+I tested all the hyperlinked text/ images/ nav items to ensure that there were no broken links and that they were linking to the correct locations on the site and/or opening in a new window if expected.
 
----
+### Effects Testing 
 
-Happy coding!
+I tested that all hover effects were working for the nav menu/ the image text overlay/ the slideshow arrows.
+
+
+
+### Performance
+
+I ran the site through the lighthouse performance tool for developers: 
+[Lighthouse](https://developers.google.com/web/tools/lighthouse)
+<img src=assets/media/Lighthouse.PNG>
+
+Given more time I would look at the passive listeners to improve scrolling performance, and also the images/ youtube videos in order to improve the performance score
+
+### Responsiveness
+
+I used chrome developer tools, [Techsini](http://techsini.com/multi-mockup/index.php) & [ami](http://ami.responsivedesign.is/#) throughout all development of the site to ensure that it was responding to all devices down to 300px - 360px width
+
+I tested the site responsiveness on my iphone/ ipad and my family/ friends android mobile devices to ensure the site was rendering and functional across a range of devices.
+
+
+### Javascript Validation
+
+I ran the JS Code through [JShint](https://jshint.com/)
+
+
+### CSS Code Validation
+I ran the CSS Code through the following validator:
+[Jigsaw](https://jigsaw.w3.org/css-validator)
+
+There were no errors detected
+<img src="assets/media/css_validator.jpg">
+
+### HTML Code Validation
+
+I ran the HTML Code through the following validator:
+[Jigsaw](https://jigsaw.w3.org/css-validator)
+
+
+### Autoprefixer CSS
+
+I ran the code through the [Autoprefixer](https://autoprefixer.github.io/) and copied the parsed CSS back into my project.
+
+### Unfixed Bugs
+
+I have come across no known bugs to report
+
+## Credits
+
+### Header & Navigation: 
+- [Responsive header & Navigation Menu](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) tutorial from W3schools.
+
+### Hero Images: 
+
+- Tutorials from [W3schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp),  [Elementor](https://elementor.com/blog/hero-image/?utm_source=google&utm_medium=cpc&utm_campaign=11138809851&utm_term=&gclid=Cj0KCQiA2ZCOBhDiARIsAMRfv9JNeu2cN7Oh6WGv706wIViKg2tBoXlBjhg9Zw9Wkd9m3fQOmdY_Fp0aAtXIEALw_wcB) & from the [Love Runnning Module](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/6fd29d155c3b42248ff57bae32978a4b/).  
+- The image used was purchased from [Shutterstock](https://www.shutterstock.com/)  
+
+### Responsiveness: 
+- Tutorials & flexbox code adapted from [Flexfroggy](https://flexboxfroggy.com/), [W3schools](https://www.w3schools.com/howto/howto_css_responsive_text.asp
+), [CSS tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), [CSS grid versus flexbox](https://webdesign.tutsplus.com/articles/flexbox-vs-css-grid-which-should-you-use--cms-30184), [Webdev](https://web.dev/responsive-web-design-basics/)
+
+
+
+- Media Queries [W3schools](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) & [Love Runnning Module](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/6fd29d155c3b42248ff57bae32978a4b/)
+
+### Hover/ Box Shadow Effects
+
+- Code taken from [Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover) & [Box Shadow](https://getcssscan.com/css-box-shadow-examples)
+
+### Lists 
+
+- Code adapted from [w3schools](https://www.w3schools.com/tags/tag_ol.asp)
+
+### Text Blocks
+
+- Code adapted from [Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block
+)
+
+### Content
+
+All content was written by the project owner
+
+### Media
+
+- All images with the exception of the hero image (purchased from Shutterstock) are images taken by the project owner and her family     
+
+
+### Readme 
+
+- I used the 
+[Markdown cheat sheet](https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md) and the [love running template ](https://github.com/Code-Institute-Solutions/readme-template )to help put together my readme.
+# Deployment
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+  - On submission the project it is forked, by forking the project a copy of the original repository is made that can be viewed without affecting the original repository by following these steps: In the GitHub repository, locate the settings, above this is the option to 'fork', select this to create a copy
