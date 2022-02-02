@@ -92,6 +92,7 @@ const questionBank = [{
 	shuffledQuestions = questionBank.sort(() => Math.random() - 0.5);
 	questionContainer.classList.remove('hide');
 	setNextQuestion();
+	//refreshBtn.classList.remove('hide');
   }
 
   // Function to reset the answer variable & display the next Question

@@ -10,15 +10,18 @@
   box-sizing: border-box;
 }
 
+.header {
+  height: 100px;
+}
 
 /*set font poperties for all pages*/
 body {
     font-family: Merriweather, Oswald;
     font-weight: 300;
     color: #002980;
-    /*background-color: #ffffbf;*/
+    background-color: #ffffbf;
     
-    background: url("../images/hero_image_horse_field.webp") no-repeat center center fixed;
+    
    
 }
 
@@ -29,7 +32,7 @@ body {
     --hue-correct: 150;
   }
 
-  /*#hero-outer {
+  #hero-outer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -38,12 +41,14 @@ body {
     overflow: hidden;
   }
 
-  /*style hero image for Index page
+/*style hero image for Index page*/
 #hero-image {
-    
+    height: 1000px;
     width: 100%;
-    background-image: url("assets/images/hero_image_horse_field.webp") no-repeat center center;
-  }*/
+    background: url("../images/hero_image_horse_field.webp") no-repeat center center;
+  }
+
+  
   
   #Quiz-container {
     
@@ -54,7 +59,7 @@ body {
     letter-spacing: 2px;  
     max-width: 750px;
     height: auto;
-    margin: 80px auto;
+    margin: 200px auto;
     /*margin-left: 50px;*/
     padding: 20px;
     /*left: 0;*/
