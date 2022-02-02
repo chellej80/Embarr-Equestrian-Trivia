@@ -124,33 +124,22 @@ const questionBank = [{
   // function for selecting the answer
 
   function onOptionClick(event) {
-	
-	
+		
     const selectedButton = event.target;
 	
-
     const correct = selectedButton.dataset.correct;
 	if (correct) {
-		
-		score++; // if answer is correct increment the result by 1 
-		results.innerHTML = `${score} questions correct out of ${shuffledQuestions.length}`; 
-
-		
-    
-	      
-    Array.from(answerContainer.children).forEach(button => {
-      setStatus(button, button.dataset.correct);
-	  button.removeEventListener("click", onOptionClick);// disables the click event for the answer buttons 
-    });
-
-	
-	}
-
-	
+		selectedButton.removeEventListener('click', onOptionClick);
+		score++;
+	  }
+	  Array.from(answerContainer.children).forEach(button => {
+		setStatus(button, button.dataset.correct);
+	  });
+	  results.innerHTML = `${score} questions correct out of ${shuffledQuestions.length}`;
+	  	
 	
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
 
-		
 	
       nextBtn.classList.remove('hide');
       
@@ -206,7 +195,7 @@ function clearStatus(element) {
     }*/
   
     function endQuiz(){
-        questionContainer.classList.remove('hide');
+        //questionContainer.classList.remove('hide');
         refreshBtn.innerText = 'Restart';
         refreshBtn.classList.remove('hide');
         homeBtn.innerText = 'Go Home';
