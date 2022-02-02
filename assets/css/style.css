@@ -10,6 +10,9 @@
   box-sizing: border-box;
 }
 
+
+
+
 .header {
   height: 100px;
 }
@@ -20,6 +23,7 @@ body {
     font-weight: 300;
     color: #002980;
     background-color: #ffffbf;
+    
     
     
    
@@ -33,19 +37,20 @@ body {
   }
 
   #hero-outer {
-    display: -webkit-box;
-    display: -ms-flexbox;
+    
     display: flex;
     position: absolute;
     width: 100%;
     overflow: hidden;
+    
+    
   }
 
 /*style hero image for Index page*/
 #hero-image {
-    height: 1000px;
+    height: max-content;
     width: 100%;
-    background: url("../images/hero_image_horse_field.webp") no-repeat center center;
+    background: url("../images/hero_image_horse_field.webp") no-repeat center center fixed;
   }
 
   
@@ -64,7 +69,7 @@ body {
     padding: 20px;
     /*left: 0;*/
     position: relative;
-    /*overflow: hidden;*/
+    overflow-y: hidden;
     background-color: rgba(23, 67, 88, 0.1);
     -webkit-box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
             box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
