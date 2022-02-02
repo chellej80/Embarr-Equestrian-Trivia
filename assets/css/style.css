@@ -18,7 +18,7 @@ body {
     color: #002980;
     background-color: #ffffbf;
     
-    /*background-image: url("assets/images/hero_image_horse_field.webp") no-repeat center center;*/
+    background-image: url("assets/images/hero_image_horse_field.webp") no-repeat center center;
    
 }
 
@@ -29,8 +29,22 @@ body {
     --hue-correct: 150;
   }
 
-  
+  /*#hero-outer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+  }
 
+  style hero image for Index page
+#hero-image {
+    
+    width: 100%;
+    background-image: url("assets/images/hero_image_horse_field.webp") no-repeat center center;
+  }*/
+  
   #Quiz-container {
     
     display: block;
