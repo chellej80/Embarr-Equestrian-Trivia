@@ -232,18 +232,18 @@ function onOptionClick(event) {
 
     const selectedButton = event.target;
 
-    const correct = selectedButton.dataset.correct;
+    const correct = selectedButton.dataset.correct; // check if selected button above is correct answer = true
     if (correct) {
         selectedButton.removeEventListener('click', onOptionClick); // on selection of an answer prevent the ability to select another
         score++; // if answer selected is correct increment the score by 1
     }
-    Array.from(answerContainer.children).forEach(button => {
-        setStatus(button, button.dataset.correct);
+    Array.from(answerContainer.children).forEach(button => { // loops through all the rest of the answer buttons and sets their status
+        setStatus(button, button.dataset.correct); // set status based on whether the answer is correct 
     });
     results.innerHTML = `Total Score is: ${score} Questions Correct out of ${shuffledQuestions.length}`; // Display the score after each answer is selected 
 
 
-    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+    if (shuffledQuestions.length > currentQuestionIndex + 1) { // check if there are any more questions 
 
 
         nextBtn.classList.remove('hide'); //If all questions have not been answers display the next button to move to next question
@@ -259,7 +259,7 @@ function onOptionClick(event) {
 }
 
 
-//sets the answer status to correct or incorect on button selection
+//clears the status & sets the answer status to correct or incorect on button selection
 function setStatus(element, correct) {
     clearStatus(element);
     if (correct) {
@@ -274,8 +274,8 @@ function setStatus(element, correct) {
 function resetStatus() {
 
     nextBtn.classList.add('hide');// Hides the next button until answer has been selected 
-    while (answerContainer.firstChild) { 
-        answerContainer.removeChild(answerContainer.firstChild);
+    while (answerContainer.firstChild) { // loops through the answers in the answer containers removes and replaces them
+        answerContainer.removeChild(answerContainer.firstChild); 
 	}
 }
 
