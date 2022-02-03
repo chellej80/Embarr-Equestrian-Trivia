@@ -79,6 +79,7 @@ This section introduces the user to Embarr Equestrian with an eye catching hero 
 
 ### Features Left to Implement
 - Additional features 
+    - Currently the questions & answers are contained in the JavaScipt Code and can be inspected via Developer tools, further development required to read in the Q&A's from an external database.
     - UserName and login features
     - A dedicated 404 page 
     - Add a progress bar.
