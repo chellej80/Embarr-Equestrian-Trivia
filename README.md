@@ -195,7 +195,7 @@ I used chrome developer tools, [Techsini](http://techsini.com/multi-mockup/index
 
 I tested the site responsiveness on my iphone/ ipad and my family/ friends android mobile devices to ensure the page was rendering and functional across a range of devices.
 
-As the quiz is contained in a flex container and the design is basic , media queries were not necessary, however once the page is further developed these would be considered, actioned and tested accordingly. 
+As the quiz is contained in a flex container and the design is basic , alot of media queries were not necessary, some media queries have been appplied in the CSS to reduce the size of the Quiz Buttons/ Text for smaller screens, however once the page is further developed these would be considered, actioned and tested accordingly. 
 
 
 ### Javascript Validation
