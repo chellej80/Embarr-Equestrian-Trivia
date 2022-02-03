@@ -269,5 +269,7 @@ All content was written by the project owner.
 
   - On submission the project it is forked, by forking the project a copy of the original repository is made that can be viewed without affecting the original repository by following these steps: In the GitHub repository, locate the settings, above this is the option to 'fork', select this to create a copy
 
+  - Cloning a repository: When you create a repository on GitHub.com, it exists as a remote repository. You can clone your repository to create a local copy on your computer and sync between the two locations. It makes it easier to fix merge conflicts, add or remove files, and push larger commits. 
+
 
 The live link can be found here - [Embarr Equestrian Trivia Challenge - Deployed Site Link](https://chellej80.github.io/Embarr-Equestrian-Trivia/)
