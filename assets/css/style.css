@@ -190,3 +190,15 @@ h2 {
 	font-size: 1.2rem;
 }
 
+@media screen and (max-width: 630px){
+
+.btn {
+	
+	padding: 5px 5px;
+	margin: 5px;
+	color: whitesmoke;
+	outline: none;
+	font-family: Merriweather, Oswald;
+	font-size: 0.5rem;
+	}
+}
