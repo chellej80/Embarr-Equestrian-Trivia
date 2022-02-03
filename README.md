@@ -4,7 +4,9 @@
 
 Embarr Equestrian Trivia challenge is a website page designed to be part of a bigger site for example Embarr Equestrian . The quiz page is targeted at horse owners or horse lovers  that would like a simple fun interactive way of learning about general horse knowledge or care.
 
-The page design was developed with mobile responsiveness at the forefront. It consists of one html page that should be developed further with improvements to the page structure in order to integrate with its master website [Embarr Equestrian - Deployed Site Link](https://chellej80.github.io/Embarr-Equestrian/).
+The page design was developed with mobile responsiveness at the forefront. It consists of one html page that should be developed further with improvements to the page structure in order to integrate with its master website [Embarr Equestrian - Deployed Site Link](https://chellej80.github.io/Embarr-Equestrian/). 
+
+The Quiz consists of ten shuffled questions that are presented with multiple choice question either two options or four options. When the user selects an answer, the correct one turns green and the wrong one turns red. The quiz result/score is incremented and on completion of the Quiz the user has the option to 'Try Again'.
 
 <div><center><h2>
 Site Mockup
@@ -155,7 +157,7 @@ I reviewed all content on the site for:
 
 ### Effects Testing 
 
-I tested that all hover effects were working for the nav menu/ the image text overlay/ the slideshow arrows.
+I tested that all hover effects were working for the buttons.
 
 
 
@@ -171,7 +173,9 @@ Given more time I would look at the passive listeners to improve scrolling perfo
 
 I used chrome developer tools, [Techsini](http://techsini.com/multi-mockup/index.php) & [ami](http://ami.responsivedesign.is/#) throughout all development of the site to ensure that it was responding to all devices down to 300px - 360px width
 
-I tested the site responsiveness on my iphone/ ipad and my family/ friends android mobile devices to ensure the site was rendering and functional across a range of devices.
+I tested the site responsiveness on my iphone/ ipad and my family/ friends android mobile devices to ensure the page was rendering and functional across a range of devices.
+
+As the quiz is contained in a flex container and the design is basic , media queries were not necessary, however once the page is further developed these would be considered, actioned and tested accordingly. 
 
 
 ### Javascript Validation
@@ -192,7 +196,7 @@ There were no errors detected
 I ran the HTML Code through the following validator:
 [Jigsaw](https://jigsaw.w3.org/css-validator)
 
-No errors or warnings
+Once two stray div elements were removed no warnings/ errors were reported.
 
 <img src="assets/images/html_validator.jpg">
 ### Autoprefixer CSS
@@ -210,10 +214,7 @@ There are now no known unfixed bugs to report.
 
 ## Credits
 
-### Header & Navigation: 
-- [Responsive header & Navigation Menu](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) tutorial from W3schools.
-
-### Hero Images: 
+### Hero Image: 
 
 - Tutorials from [W3schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp),  [Elementor](https://elementor.com/blog/hero-image/?utm_source=google&utm_medium=cpc&utm_campaign=11138809851&utm_term=&gclid=Cj0KCQiA2ZCOBhDiARIsAMRfv9JNeu2cN7Oh6WGv706wIViKg2tBoXlBjhg9Zw9Wkd9m3fQOmdY_Fp0aAtXIEALw_wcB) & from the [Love Runnning Module](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/6fd29d155c3b42248ff57bae32978a4b/).  
 - The image used was purchased from [Shutterstock](https://www.shutterstock.com/)  
@@ -224,15 +225,9 @@ There are now no known unfixed bugs to report.
 
 
 
-- Media Queries [W3schools](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) & [Love Runnning Module](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/6fd29d155c3b42248ff57bae32978a4b/)
-
 ### Hover/ Box Shadow Effects
 
 - Code taken from [Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover) & [Box Shadow](https://getcssscan.com/css-box-shadow-examples)
-
-### Lists 
-
-- Code adapted from [w3schools](https://www.w3schools.com/tags/tag_ol.asp)
 
 ### Text Blocks
 
@@ -241,17 +236,18 @@ There are now no known unfixed bugs to report.
 
 ### Content
 
-All content was written by the project owner
+All content was written by the project owner.
 
 ### Media
 
-- All images with the exception of the hero image (purchased from Shutterstock) are images taken by the project owner and her family     
+- The hero image (purchased from Shutterstock) 
 
 
 ### Readme 
 
 - I used the 
 [Markdown cheat sheet](https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md) and the [love running template ](https://github.com/Code-Institute-Solutions/readme-template )to help put together my readme.
+
 # Deployment
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
@@ -260,3 +256,6 @@ All content was written by the project owner
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
   - On submission the project it is forked, by forking the project a copy of the original repository is made that can be viewed without affecting the original repository by following these steps: In the GitHub repository, locate the settings, above this is the option to 'fork', select this to create a copy
+
+
+The live link can be found here - [Embarr Equestrian Trivia Challenge - Deployed Site Link](https://chellej80.github.io/Embarr-Equestrian-Trivia/)
