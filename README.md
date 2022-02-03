@@ -88,10 +88,10 @@ This section introduces the user to Embarr Equestrian with an eye catching hero 
        
 
 ## Languages Used
-
+- Javascript
 - HTML
 - CSS
-- Javascript
+
 
 ## Frameworks, Libaries and technologies used
 
