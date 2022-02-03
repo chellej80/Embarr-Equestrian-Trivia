@@ -201,4 +201,12 @@ h2 {
 	font-family: Merriweather, Oswald;
 	font-size: 0.5rem;
 	}
+
+#quiz-container {
+
+	font-size: 60%;
+	}
+#results {
+	font-size: 1em;
+	}
 }
