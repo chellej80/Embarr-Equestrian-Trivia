@@ -111,10 +111,38 @@ This section introduces the user to Embarr Equestrian with an eye catching hero 
 ## Testing Conducted 
 
 ### Usability testing 
-I had work colleagues and family members assistance to test the site usability. The conclusion of this testing was that:
-- All pages of the site were understandable and easy to use
-- Buttons, links, and fields were convenient for use
-- There is access to the Main navigation menu from all pages via the desktop version and mobile version.
+
+I tested the quiz application thoroughly and repetitively throughout the Javascript coding, using console.log() where necessary and the dev tools in chrome for debugging. 
+I also had work colleagues and family members assistance to test the site usability. 
+I tested all quiz buttons/ actions/ functions to ensure that they were working as expected.
+I tested the quiz logic was working as expected.
+
+Test Script actioned:
+
+1. Navigate to page
+2. Review Quiz text
+3. Click on button 'Play the Quiz'
+4. Result - Quiz loads as expected with the 1st Question and multiple choice answers & 'Play Quiz button is hidden'
+5. Select answer - The Correct answer turns green/ the wrong answers turn red.
+6. On selecting an answer the 'Next' Button appears, the current answer buttons no longer can be actively selected and the score result is updated.
+7. On clicking the 'Next' button the question/ answer containers are cleared and a new question is loaded, if the question only has two choices as opposed to four the answer grid appends accordingly.
+8. On conclusion of answering all Questions the endgame function is actioned and a message of 'Quiz completed' is displayed with the final result and the 'Try again' button is enabled which on click refreshes the page so the user can complete the quiz again, clearing the Quiz and enabling the 'Play the Quiz' button.
+9. Repeat the above steps a number to times to ensure that the questions are being loaded in a shuffled logic.
+
+
+The conclusion of repeating the above test script multiple times was that:
+
+- The quiz page and quiz itself was understandable and easy to use.
+- All Buttons with eventlistners/ functions on completion of testing are working as expected.
+- The Shuffled question logic is working as expected.
+- The correct color hue is being loaded on selection of an answer - red for wrong/ green for correct.
+- The results/ score is being incremented correcly.
+- The quiz only actions the endquiz function once all questions have been answered.
+- The select/ click action is disabled once a question is selected, it is only possible to move forward with the quiz by seclecting 'Next'
+- The 'Play Quiz' button hides as expected on initialising the quiz.
+- The 'Next' button only appears once a question has been answered.
+- The Restart button only appears for the end quiz.
+
 
 ### Content 
 
@@ -124,13 +152,6 @@ I reviewed all content on the site for:
 - Instructions are clear and contain correct information
 - Verified all text/ headings are displaying correctly
 
-### Navigation
-
-I tested all the navigation functions via desktop and mobile/ ipad to ensure that they are functioning and linking to the correct pages.
-
-### Links testing
-
-I tested all the hyperlinked text/ images/ nav items to ensure that there were no broken links and that they were linking to the correct locations on the site and/or opening in a new window if expected.
 
 ### Effects Testing 
 
@@ -142,7 +163,7 @@ I tested that all hover effects were working for the nav menu/ the image text ov
 
 I ran the site through the lighthouse performance tool for developers: 
 [Lighthouse](https://developers.google.com/web/tools/lighthouse)
-<img src=assets/media/Lighthouse.PNG>
+<img src=assets/images/lighthouse.jpg>
 
 Given more time I would look at the passive listeners to improve scrolling performance, and also the images/ youtube videos in order to improve the performance score
 
