@@ -178,27 +178,35 @@ I tested the site responsiveness on my iphone/ ipad and my family/ friends andro
 
 I ran the JS Code through [JShint](https://jshint.com/)
 
+No errors detected
 
 ### CSS Code Validation
 I ran the CSS Code through the following validator:
 [Jigsaw](https://jigsaw.w3.org/css-validator)
 
 There were no errors detected
-<img src="assets/media/css_validator.jpg">
+<img src="assets/images/css_validator.jpg">
 
 ### HTML Code Validation
 
 I ran the HTML Code through the following validator:
 [Jigsaw](https://jigsaw.w3.org/css-validator)
 
+No errors or warnings
 
+<img src="assets/images/html_validator.jpg">
 ### Autoprefixer CSS
 
 I ran the code through the [Autoprefixer](https://autoprefixer.github.io/) and copied the parsed CSS back into my project.
 
-### Unfixed Bugs
+### Bugs
 
-I have come across no known bugs to report
+In my testing I discovered a couple of bugs that I fixed:
+
+1. The score was incrementing on navigation through the quiz questions - this was resolved by using an if statment within the funtion onOptionClick so that the score would only increment if the answer was 'correct'.
+2. The score was incrementing if the user clicked the correct answer button multiple times - this was resolved by removing the 'click' event listner ability once the user had made their selection.
+
+There are now no known unfixed bugs to report.
 
 ## Credits
 
