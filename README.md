@@ -281,6 +281,10 @@ All content was written by the project owner.
 - I used the 
 [Markdown cheat sheet](https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md) and the [love running template ](https://github.com/Code-Institute-Solutions/readme-template )to help put together my readme.
 
+## Acknowledgments
+
+I would like to thank my mentor Akshat Garg for his guidence.
+
 # Deployment
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
