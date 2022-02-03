@@ -1,11 +1,11 @@
 /*Code inspired and adapted from the following tutorials and sources:
-https://www.sitepoint.com/simple-javascript-quiz/
-https://www.youtube.com/watch?v=f4fB9Xg2JEY&list=WL&index=14
-https://www.youtube.com/watch?v=w-OKdSHRlfA&list=WL&index=13
-https://flexiple.com/disable-button-javascript/
-https://www.youtube.com/watch?v=jvk1pFNqXaw&t=1300s
-https://stackoverflow.com/questions/28610365/how-can-i-add-an-event-for-a-one-time-click-to-a-function
-https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw
+* https://www.sitepoint.com/simple-javascript-quiz/
+* https://www.youtube.com/watch?v=f4fB9Xg2JEY&list=WL&index=14
+* https://www.youtube.com/watch?v=w-OKdSHRlfA&list=WL&index=13
+* https://flexiple.com/disable-button-javascript/
+* https://www.youtube.com/watch?v=jvk1pFNqXaw&t=1300s
+* https://stackoverflow.com/questions/28610365/how-can-i-add-an-event-for-a-one-time-click-to-a-function
+* https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw
 */
 
 
@@ -225,7 +225,6 @@ function displayQuestion() {
     });
 }
 
-
 // function for selecting the answer
 
 function onOptionClick(event) {
@@ -242,22 +241,15 @@ function onOptionClick(event) {
     });
     results.innerHTML = `Total Score is: ${score} Question(s) Correct out of ${shuffledQuestions.length}`; // Display the score after each answer is selected 
 
-
     if (shuffledQuestions.length > currentQuestionIndex + 1) { // check if there are any more questions 
 
-
         nextBtn.classList.remove('hide'); //If all questions have not been answers display the next button to move to next question
-
-
-
 
     } else {
 
         endQuiz();// If all questions have been answered go to Quiz completed 
-
     }
 }
-
 
 //clears the status & sets the answer status to correct or incorect on button selection
 function setStatus(element, correct) {
@@ -272,7 +264,6 @@ function setStatus(element, correct) {
 
 // function to reset the answer selections when user clicks the next button
 function resetStatus() {
-
     nextBtn.classList.add('hide');// Hides the next button until answer has been selected 
     while (answerContainer.firstChild) { // loops through the answers in the answer containers removes and replaces them
         answerContainer.removeChild(answerContainer.firstChild); 
@@ -285,14 +276,10 @@ function clearStatus(element) {
     element.classList.remove('wrong');
 }
 
-
-
-
 // Function that reloads the page & restarts the quiz
 function refreshPage() {
     window.location.reload();
 }
-
 
 //Function to display Restart quiz option and final results, called when all questions have been answered
 function endQuiz() {
@@ -300,5 +287,4 @@ function endQuiz() {
     questionContainer.classList.remove('hide');
     refreshBtn.innerText = 'Try Again ?';
     refreshBtn.classList.remove('hide');
-
 }
