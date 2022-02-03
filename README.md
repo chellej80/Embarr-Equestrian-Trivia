@@ -214,6 +214,18 @@ There are now no known unfixed bugs to report.
 
 ## Credits
 
+### JavaScript:
+
+Code inspired and adapted from the following tutorials and sources:
+- https://www.sitepoint.com/simple-javascript-quiz/
+- https://simplestepscode.com/javascript-quiz-tutorial/
+- https://www.youtube.com/watch?v=f4fB9Xg2JEY&list=WL&index=14
+- https://www.youtube.com/watch?v=w-OKdSHRlfA&list=WL&index=13
+- https://flexiple.com/disable-button-javascript/
+- https://www.youtube.com/watch?v=jvk1pFNqXaw&t=1300s
+- https://stackoverflow.com/questions/28610365/how-can-i-add-an-event-for-a-one-time-click-to-a-function
+- https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw
+
 ### Hero Image: 
 
 - Tutorials from [W3schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp),  [Elementor](https://elementor.com/blog/hero-image/?utm_source=google&utm_medium=cpc&utm_campaign=11138809851&utm_term=&gclid=Cj0KCQiA2ZCOBhDiARIsAMRfv9JNeu2cN7Oh6WGv706wIViKg2tBoXlBjhg9Zw9Wkd9m3fQOmdY_Fp0aAtXIEALw_wcB) & from the [Love Runnning Module](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/6fd29d155c3b42248ff57bae32978a4b/).  
