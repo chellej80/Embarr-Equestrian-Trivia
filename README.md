@@ -102,7 +102,7 @@ This section introduces the user to Embarr Equestrian with an eye catching hero 
 - [Google Fonts](https://fonts.google.com/) - Were used to import the Merriweather font used throughout the site.
 
 - [Hover: CSS](https://www.w3schools.com/cssref/sel_hover.asp) - Was used to created the pop effect for the linked three images on the landing page and the colour hover effect   in navigation menu & slideshow next/prev arrows.
-- [Javascript](https://www.w3schools.com/w3css/w3css_slideshow.asp) - JS script was used to action the manual slideshow function.
+- [Javascript](https://www.w3schools.com/w3css/w3css_slideshow.asp) - JS script was used to action the quiz functions.
 - [Squoosh](https://squoosh.app/) - This was used to prepare the images for web optimisation
 - [Techsini](https://techsini.com/multi-mockup) - This was used for the mockup image in the overview.
 
@@ -145,7 +145,14 @@ The conclusion of repeating the above test script multiple times was that:
 - The 'Next' button only appears once a question has been answered.
 - The Restart button only appears for the end quiz.
 
+### Bugs
 
+In my testing I discovered a couple of bugs that I fixed:
+
+1. The score was incrementing on navigation through the quiz questions - this was resolved by using an if statment within the funtion onOptionClick so that the score would only increment if the answer was 'correct'.
+2. The score was incrementing if the user clicked the correct answer button multiple times - this was resolved by removing the 'click' event listner ability once the user had made their selection.
+
+There are now no known unfixed bugs to report.
 ### Content 
 
 I reviewed all content on the site for:
@@ -167,7 +174,7 @@ I ran the site through the lighthouse performance tool for developers:
 [Lighthouse](https://developers.google.com/web/tools/lighthouse)
 <img src=assets/images/lighthouse.jpg>
 
-Given more time I would look at the passive listeners to improve scrolling performance, and also the images/ youtube videos in order to improve the performance score
+
 
 ### Responsiveness
 
@@ -203,14 +210,7 @@ Once two stray div elements were removed no warnings/ errors were reported.
 
 I ran the code through the [Autoprefixer](https://autoprefixer.github.io/) and copied the parsed CSS back into my project.
 
-### Bugs
 
-In my testing I discovered a couple of bugs that I fixed:
-
-1. The score was incrementing on navigation through the quiz questions - this was resolved by using an if statment within the funtion onOptionClick so that the score would only increment if the answer was 'correct'.
-2. The score was incrementing if the user clicked the correct answer button multiple times - this was resolved by removing the 'click' event listner ability once the user had made their selection.
-
-There are now no known unfixed bugs to report.
 
 ## Credits
 
