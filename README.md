@@ -64,6 +64,9 @@ Site Mockup
 
 The Quiz text is a short simple description of the quiz and how to navigate it. If the quiz is developed further, more detailed instructions may be necessary. Currently the structure of the quiz is simple and structured so the user is presented with a clear navigation path through the quiz, without the need for excessive instructions.
 
+<img src="assets/images/quiz1.jpg" width ="400">
+
+
 
 ### The Hero Image
 
@@ -72,6 +75,7 @@ The Quiz text is a short simple description of the quiz and how to navigate it. 
 The landing page includes a hero image of a horse with a text overlay to allow the user to quickly see exactly what the site quiz is about.
 This section introduces the user to Embarr Equestrian with an eye catching hero image to grab their attention.
 
+<img src="assets/images/hero_image_horse_field.webp" width ="400">
 
 ### Features Left to Implement
 - Additional features 
@@ -125,10 +129,19 @@ Test Script actioned:
 2. Review Quiz text
 3. Click on button 'Play the Quiz'
 4. Result - Quiz loads as expected with the 1st Question and multiple choice answers & 'Play Quiz button is hidden'
+
+<img src="assets/images/quiz2.jpg" width="300">
+
 5. Select answer - The Correct answer turns green/ the wrong answers turn red.
+
+<img src="assets/images/quiz3.jpg" width="300">
+
 6. On selecting an answer the 'Next' Button appears, the current answer buttons no longer can be actively selected and the score result is updated.
 7. On clicking the 'Next' button the question/ answer containers are cleared and a new question is loaded, if the question only has two choices as opposed to four the answer grid appends accordingly.
 8. On conclusion of answering all Questions the endgame function is actioned and a message of 'Quiz completed' is displayed with the final result and the 'Try again' button is enabled which on click refreshes the page so the user can complete the quiz again, clearing the Quiz and enabling the 'Play the Quiz' button.
+
+<img src="assets/images/quiz4.jpg" width="300">
+
 9. Repeat the above steps a number to times to ensure that the questions are being loaded in a shuffled logic.
 
 
