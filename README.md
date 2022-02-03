@@ -204,6 +204,8 @@ I ran the JS Code through [JShint](https://jshint.com/)
 
 No errors detected
 
+I ran the code through [JavaScript Beautifier](https://beautifier.io/) and copied it back into my JS file.
+
 ### CSS Code Validation
 I ran the CSS Code through the following validator:
 [Jigsaw](https://jigsaw.w3.org/css-validator)
@@ -218,7 +220,10 @@ I ran the HTML Code through the following validator:
 
 Once two stray div elements were removed no warnings/ errors were reported.
 
+I ran the html code through a html beautifier and copied it back into the index file [Code Beautify](https://codebeautify.org/htmlviewer)
+
 <img src="assets/images/html_validator.jpg">
+
 ### Autoprefixer CSS
 
 I ran the code through the [Autoprefixer](https://autoprefixer.github.io/) and copied the parsed CSS back into my project.
