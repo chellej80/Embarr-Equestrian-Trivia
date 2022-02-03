@@ -240,7 +240,7 @@ function onOptionClick(event) {
     Array.from(answerContainer.children).forEach(button => { // loops through all the rest of the answer buttons and sets their status
         setStatus(button, button.dataset.correct); // set status based on whether the answer is correct 
     });
-    results.innerHTML = `Total Score is: ${score} Questions Correct out of ${shuffledQuestions.length}`; // Display the score after each answer is selected 
+    results.innerHTML = `Total Score is: ${score} Question(s) Correct out of ${shuffledQuestions.length}`; // Display the score after each answer is selected 
 
 
     if (shuffledQuestions.length > currentQuestionIndex + 1) { // check if there are any more questions 
