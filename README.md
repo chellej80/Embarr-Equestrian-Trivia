@@ -236,6 +236,7 @@ I ran the code through the [Autoprefixer](https://autoprefixer.github.io/) and c
 
 Code inspired and adapted from the following tutorials and sources:
 - https://www.sitepoint.com/simple-javascript-quiz/
+- https://www.w3schools.com/js/default.asp
 - https://simplestepscode.com/javascript-quiz-tutorial/
 - https://www.youtube.com/watch?v=f4fB9Xg2JEY&list=WL&index=14
 - https://www.youtube.com/watch?v=w-OKdSHRlfA&list=WL&index=13
@@ -243,6 +244,8 @@ Code inspired and adapted from the following tutorials and sources:
 - https://www.youtube.com/watch?v=jvk1pFNqXaw&t=1300s
 - https://stackoverflow.com/questions/28610365/how-can-i-add-an-event-for-a-one-time-click-to-a-function
 - https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw
+
+And of course the Code Institute Javascript online module & challenges/ Love Maths
 
 ### Hero Image: 
 
