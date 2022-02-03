@@ -1,4 +1,8 @@
+/* Reference: All CSS inspired and adapted from https://www.w3schools.com/css/*/
+
+/*Import google fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather:wght@300&family=Oswald:wght@300&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
